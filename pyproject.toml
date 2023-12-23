@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "recommendation-project"
+version = "0.1.0"
+description = ""
+authors = ["tony <tonychunenlin@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.9.12"
+torch = "^2.1.2"
+numpy = "^1.23.2"
+pandas = "^2.1.3"
+scikit-learn = "^1.3.2"
+kaggle = "^1.5.16"
+dill = "^0.3.7"
+seaborn = "^0.13.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
