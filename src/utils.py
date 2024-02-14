@@ -203,10 +203,6 @@ def calculate_metrics(trained_model, test_loader, test) -> dict:
         mean_average_recall_K.extend([recmetrics.mark(test.actual.values.tolist(), test.nn_predictions.values.tolist(), k=K)])
     metrics_result['mean_average_recall_K'] = mean_average_recall_K
 
-    # index = range(1,10+1)
-    # names = ['nn']
-    # recmetrics.mark_plot([mean_average_recall_K], model_names=names, k_range=index)
-
     personalizs_scroe = recmetrics.personalization(test.nn_predictions.values.tolist())
 
     metrics_result['personalizs_scroe'] = personalizs_scroe
