@@ -1,0 +1,7 @@
+run/*
+
+.vscode
+
+data/
+
+__pycache__
